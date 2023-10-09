@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vadidate Form</title>
+    <script src="form1.js"></script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="form1.css"> 
+<form method="post" onsubmit="checkForm()">
+    <h1 class="header">DAT'S STORE</h1>
+    <div class="topnav">
+        <a href="layout.html">Home</a>
+        <a href="form1.html">Form</a>
+        <a href="register.html">Login</a>
+    </div>  
+    
+    <div class="container">
+        <center><h1>User Registeration Form</h1></center>
+        <hr>
+    <label for="fname">First Name:</label>
+    <span class="error" id="fnameError"></span>
+    <input type="text" id="fname" name="fname" required ><br><br>
+    
+    <label for="mname">Middle Name:</label>
+    <input type="text" id="mname" name="mname" required ><br><br>
+    
+    <label  for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" required><br><br>
+
+    <label>Region:</label>
+    <select>
+        <option value="North">North</option>
+        <option value="Central">Central</option>
+        <option value="South">South</option>
+    </select><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" checked>Male<br>
+    <input type="radio" id="fmale" name="gender">Female<br>
+    <input type="radio" id="other" name="gender">Other</label><br><br>
+
+    <label>Phone:</label>
+    <input type="text" name="country code" value="+84" size="2"/>
+    <span class="error" id="phoneError"></span>
+    <input type="text" name="phone" id="phone" size="10" required><br><br>
+ 
+    <label for="address">Address:</label><br>
+    <textarea cols="80" rows="5" value="address" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
